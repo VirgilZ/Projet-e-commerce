@@ -1,0 +1,166 @@
+body {
+    background-image: url(../assets/img/bgvirgil.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+body>header>nav.navheader {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 13%, rgba(9,11,121,1) 53%, rgba(0,212,255,1) 100%);
+    color: white;
+
+}
+
+.nav-elem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+body>header>nav.navheader>div>div>div:nth-child(3)>div>img {
+    float: right;
+}
+
+#carouselExampleSlidesOnly>div>div:nth-child(5)>img {
+    padding-top: 1em;
+    padding-right: 2em;
+    height: 150px;
+    width: 250px;
+}
+
+
+#carouselExampleSlidesOnly>div>div:nth-child(1)>img {
+    width: 150px;
+    height: 150px;
+    padding-top: 1em;
+}
+
+body>header>nav.navheader>div>div>div:nth-child(3)>div>img {
+    padding-top: 3em;
+
+}
+
+#carouselExampleSlidesOnly>div>div:nth-child(3)>img {
+    width: 150px;
+    height: 150px;
+    padding-top: 1em;
+}
+
+#carouselExampleSlidesOnly>div>div:nth-child(4)>img {
+    width: 150px;
+    height: 150px;
+
+}
+
+#carouselExampleSlidesOnly>div>div:nth-child(2)>img {
+    width: 150px;
+    height: 150px;
+}
+
+body>header>nav.navheader>div>div>div:nth-child(2)>p {
+    padding-top: 1em;
+}
+
+.nav-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .carousel-item{
+    float: none;
+    width: 25rem;
+} */
+#main-content{
+    width: 98%;
+    margin: auto;
+}
+.nav{
+    background: rgb(0,212,255);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 100%);
+   color: white;
+   border-radius: 20%;
+   border-style:solid;
+   border-color: black;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-decoration: none;
+   position: absolute;
+   height: 20em;
+   width: auto;
+}
+
+span{
+    border-style: solid ;
+    border-color:black;
+}
+
+body > header > nav.navbar.navbar-light.bg-light.px-2{
+    height: 100px;
+    background: rgb(0,212,255);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 0%);
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+    
+}
+#description:hover { 
+        opacity: 20%;
+         transition: 1s;
+}
+.head{
+    padding-left: 3em;
+    padding-top: 3em;
+}
+.panier{
+    padding-left: 5em;
+    padding-top: 2em;
+    width: 700px;
+}
+.navcenter{
+    display:flex;
+    justify-content: center;
+    background: rgb(2,0,36);
+    text-align: center;
+}
+.replacement{
+    position: absolute;
+    top: 8em;
+    left: 4em;
+    display: none;
+}
+.col{
+    position: relative;
+}
+.col:hover .replacement{
+    display: block;
+}
+
+
+
+h1{
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+}
+h4{
+    text-transform: capitalize;
+}
+body > header > nav > div > div > div:nth-child(1) > div > a > img{
+    padding-left: 1em;
+    padding-top: 1em;
+    width: 150px;
+    height: 150px;
+}
+#boutonprix{
+    color: white;
+    background: rgb(0,212,255);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 0%);
+    text-align: center;
+}
