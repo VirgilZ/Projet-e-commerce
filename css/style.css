@@ -1,12 +1,14 @@
+html,body{
+    width: 100%;
+    min-height: 100%;
+}
 body {
     background-image: url(../assets/img/bgvirgil.svg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-family: 'Press Start 2P';
 }
 
 
@@ -14,6 +16,7 @@ body>header>nav.navheader {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 13%, rgba(9,11,121,1) 53%, rgba(0,212,255,1) 100%);
     color: white;
+    
 
 }
 
@@ -28,7 +31,7 @@ body>header>nav.navheader>div>div>div:nth-child(3)>div>img {
     float: right;
 }
 
-#carouselExampleSlidesOnly>div>div:nth-child(5)>img {
+#carouselExampleSlidesOnly>div>div:nth-child(5)>a>img {
     padding-top: 1em;
     padding-right: 2em;
     height: 150px;
@@ -36,7 +39,7 @@ body>header>nav.navheader>div>div>div:nth-child(3)>div>img {
 }
 
 
-#carouselExampleSlidesOnly>div>div:nth-child(1)>img {
+#carouselExampleSlidesOnly>div>div:nth-child(1)>a>img {
     width: 150px;
     height: 150px;
     padding-top: 1em;
@@ -47,19 +50,19 @@ body>header>nav.navheader>div>div>div:nth-child(3)>div>img {
 
 }
 
-#carouselExampleSlidesOnly>div>div:nth-child(3)>img {
+#carouselExampleSlidesOnly>div>div:nth-child(3)>a>img {
     width: 150px;
     height: 150px;
     padding-top: 1em;
 }
 
-#carouselExampleSlidesOnly>div>div:nth-child(4)>img {
+#carouselExampleSlidesOnly>div>div:nth-child(4)>a>img {
     width: 150px;
     height: 150px;
 
 }
 
-#carouselExampleSlidesOnly>div>div:nth-child(2)>img {
+#carouselExampleSlidesOnly>div>div:nth-child(2)>a>img {
     width: 150px;
     height: 150px;
 }
@@ -83,10 +86,7 @@ body>header>nav.navheader>div>div>div:nth-child(2)>p {
     margin: auto;
 }
 .nav{
-    background: rgb(0,212,255);
-    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 100%);
-   color: white;
-   border-radius: 20%;
+    background: rgb(2,0,36);
    border-style:solid;
    border-color: black;
    padding-top: 10px;
@@ -104,8 +104,6 @@ span{
 
 body > header > nav.navbar.navbar-light.bg-light.px-2{
     height: 100px;
-    background: rgb(0,212,255);
-    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 0%);
     color: white;
     width: fit-content;
     text-decoration: none;
@@ -113,15 +111,15 @@ body > header > nav.navbar.navbar-light.bg-light.px-2{
 }
 #description:hover { 
         opacity: 20%;
-         transition: 1s;
+         transition: 300ms;
 }
 .head{
     padding-left: 3em;
     padding-top: 3em;
 }
 .panier{
-    padding-left: 5em;
-    padding-top: 2em;
+    padding-left: 15em;
+    padding-top: 5em;
     width: 700px;
 }
 .navcenter{
@@ -133,13 +131,15 @@ body > header > nav.navbar.navbar-light.bg-light.px-2{
 .replacement{
     position: absolute;
     top: 8em;
-    left: 4em;
+    left: 3em; 
     display: none;
+    text-align: center;
 }
-.col{
+.affichage{
     position: relative;
+    text-align: center;
 }
-.col:hover .replacement{
+.affichage:hover .replacement{
     display: block;
 }
 body > header > nav > div > div > div:nth-child(1) > div > a > img{
@@ -148,7 +148,7 @@ body > header > nav > div > div > div:nth-child(1) > div > a > img{
     width: 150px;
     height: 150px;
 }
-#boutonprix{
+.boutonprix{
     color: white;
     background: rgb(0,212,255);
     background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 0%);
@@ -156,3 +156,34 @@ body > header > nav > div > div > div:nth-child(1) > div > a > img{
 }
 
 
+body > div{
+    z-index: 50;
+}
+.hidelien{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background: rgb(2,0,36);
+    height: 100%;
+
+}
+.hidelien a{
+    text-decoration: none;
+    color: white;
+    flex-basis: 50%;
+}
+@media (min-width:760px){
+     .hidelien a {
+         flex-basis: 100%;
+         
+        
+    } 
+    #responsive > nav > div > div > div.col-sm-4.nav-elem.nav-slider > h1{
+        text-align: center;
+    }
+
+}
+#responsive > nav > div > div > div.col-sm-4.nav-elem.nav-slider > h1{
+    padding-top: 3em;
+}

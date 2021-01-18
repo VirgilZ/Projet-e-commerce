@@ -1,18 +1,23 @@
+
+html,body{
+    width: 100%;
+    min-height: 100%;
+}
 body {
     background-image: url(../assets/img/bgvirgil.svg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-family: 'Press Start 2P';
 }
+
 
 body>header>nav.navheader {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 13%, rgba(9,11,121,1) 53%, rgba(0,212,255,1) 100%);
     color: white;
+    
 
 }
 
@@ -82,10 +87,7 @@ body>header>nav.navheader>div>div>div:nth-child(2)>p {
     margin: auto;
 }
 .nav{
-    background: rgb(0,212,255);
-    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 100%);
-   color: white;
-   border-radius: 20%;
+    background: rgb(2,0,36);
    border-style:solid;
    border-color: black;
    padding-top: 10px;
@@ -103,8 +105,6 @@ span{
 
 body > header > nav.navbar.navbar-light.bg-light.px-2{
     height: 100px;
-    background: rgb(0,212,255);
-    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 0%);
     color: white;
     width: fit-content;
     text-decoration: none;
@@ -112,15 +112,15 @@ body > header > nav.navbar.navbar-light.bg-light.px-2{
 }
 #description:hover { 
         opacity: 20%;
-         transition: 1s;
+         transition: 300ms;
 }
 .head{
     padding-left: 3em;
     padding-top: 3em;
 }
 .panier{
-    padding-left: 5em;
-    padding-top: 2em;
+    padding-left: 15em;
+    padding-top: 5em;
     width: 700px;
 }
 .navcenter{
@@ -132,25 +132,16 @@ body > header > nav.navbar.navbar-light.bg-light.px-2{
 .replacement{
     position: absolute;
     top: 8em;
-    left: 4em;
+    left: 3em; 
     display: none;
-}
-.col{
-    position: relative;
-}
-.col:hover .replacement{
-    display: block;
-}
-
-
-
-h1{
     text-align: center;
-    font-weight: lighter;
-    font-style: italic;
 }
-h4{
-    text-transform: capitalize;
+.affichage{
+    position: relative;
+    text-align: center;
+}
+.affichage:hover .replacement{
+    display: block;
 }
 body > header > nav > div > div > div:nth-child(1) > div > a > img{
     padding-left: 1em;
@@ -158,9 +149,39 @@ body > header > nav > div > div > div:nth-child(1) > div > a > img{
     width: 150px;
     height: 150px;
 }
-#boutonprix{
+ #boutonprix{
     color: white;
     background: rgb(0,212,255);
     background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,15,51,1) 0%);
     text-align: center;
+}
+
+
+body > div{
+    z-index: 50;
+}
+.hidelien{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background: rgb(2,0,36);
+    height: 100%;
+
+}
+.hidelien a{
+    text-decoration: none;
+    color: white;
+    flex-basis: 50%;
+}
+@media (min-width:760px){
+     .hidelien a {
+         flex-basis: 100%;
+        
+    } 
+
+}
+.center{
+    padding-top: 2em;
+    font-style: italic;
 }

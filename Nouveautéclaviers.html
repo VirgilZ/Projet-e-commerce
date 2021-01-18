@@ -5,18 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-sport Marketing</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-  </script>
+  </script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/nouveauté.css" />
-  <script src="../js/script.js"></script>
+  
 </head>
 
 <body>
-  <header>
+  <header id="responsive">
     <nav class="navheader">
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4 nav-elem">            
@@ -31,65 +38,69 @@
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="title">
-                  <h1>New Keyboard</h1>
+                  <h1 class="center">New Keyboard</h1>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-4 nav-elem">
             <div class="panier">
-              <img src="../assets/img/shopping-cart-solid.svg" class="d-block m-auto w-25" alt="...">
+              <a href="panier.html">
+                <img src="../assets/img/shopping-cart-solid.svg" class="d-block m-auto w-25" alt="...">
+              </a> 
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <div class="navcenter">
-      <nav class="navbar navbar-light bg-light px-2">
-        <p>Equipes:</p>
-        <a class="navbar-brand" href="#">
-          <img src="assets\img\Logos\logo fnc.png" width="30" height="30" alt="">
-          <p>Fnatic</p>
-        </a>
-        <a class="navbar-brand" href="#">
-          <img src="assets\img\Logos\g2 logo.png" width="30" height="30" alt="">
-          <p>G2 Esport</p>
-        </a>
-        <a class="navbar-brand" href="#">
-          <img src="assets\img\Logos\MAD_Lionslogo_profile.png" width="30" height="30" alt="">
-          <p>Splyce</p>
-        </a>
-        <a class="navbar-brand" href="#">
-          <img src="assets\img\Logos\vitality.png" width="30" height="30" alt="">
-          <p>Vitality</p>
-        </a>
-        <a class="navbar-brand" href="#">
-          <img src="assets\img\Logos\rogue logo.png" width="30" height="30" alt="">
-          <p>Rogue</p>
-        </a>
-        <a class="navbar-brand" href="#">
-          <img src="assets\img\Logos\Origenlogo_profile.png" width="30" height="30" alt="">
-          <p>Origen</p>
-        </a>
-      </nav>
-    </div>
   </header>
-  <main>
-    <div class="container-fluid" id="main-content">
+  <div class="navcenter sticky-top">
+    <nav class="navbar navbar-light bg-light px-2">
+      <p>Equipes:</p>
+      <a class="navbar-brand" href="FNC.html">
+        <img src="assets\img\Logos\logo fnc.png" width="30" height="30" alt="">
+        <p>Fnatic</p>
+      </a>
+      <a class="navbar-brand" href="G2.html">
+        <img src="assets\img\Logos\g2 logo.png" width="30" height="30" alt="">
+        <p>G2 Esport</p>
+      </a>
+      <a class="navbar-brand" href="Splyce.html">
+        <img src="assets\img\Logos\MAD_Lionslogo_profile.png" width="30" height="30" alt="">
+        <p>Splyce</p>
+      </a>
+      <a class="navbar-brand" href="Vitality.html">
+        <img src="assets\img\Logos\vitality.png" width="30" height="30" alt="">
+        <p>Vitality</p>
+      </a>
+      <a class="navbar-brand" href="Rogue.html">
+        <img src="assets\img\Logos\rogue logo.png" width="30" height="30" alt="">
+        <p>Rogue</p>
+      </a>
+      <a class="navbar-brand" href="Origen.html">
+        <img src="assets\img\Logos\Origenlogo_profile.png" width="30" height="30" alt="">
+        <p>Origen</p>
+      </a>
+    </nav>
+  </div>
+  <main id="responsive">
+    <div id="main-content">
       <div class="row">
-        <div class="col-2">
-          <nav class="nav d-flex flex-column align-items-center justify-content-between h-100  ">
-            <li><a href="nouveautésouris.html"><span>Mouse</span></a></li>
-            <li><a href="nouveautéclaviers.html"><span>Keyboard</span></a></li>
-            <li><a href="nouveaupc.html"><span>Computer</span></a></li>
-            <li><a href="nouveautétds.html"><span>Mouse pad</span></a></li>
-            <li><a href="Nouveautéhabits.html"><span>Clothes</span></a></li>
-            <li><a href="Nouveaugoodies.html"><span>Goodies</span></a></li>
+        <div class="col-md-2">
+          <nav class=" hidelien">  
+                  
+            <a href="nouveautésouris.html">Mouse</a>
+            <a href="nouveautéclaviers.html">Keyboard</a>
+            <a href="nouveaupc.html">Computer</a>
+            <a href="nouveautétds.html">Mouse pad</a>
+            <a href="Nouveautéhabits.html">Clothes</a>
+            <a href="Nouveaugoodies.html">Goodies</a>
+            <a href="contatceznous.html"> Contact-us</a>
           </nav>
         </div>
-        <div style="height: 50vh;" class="col-10">
-          <div class="row row-cols-2 row-cols-lg-2 g-2 g-lg-2">
-            <div class="col">
+        <div style="height: 50vh;" class="col-12 col-md-10">
+          <div class="row">
+            <div class="affichage col-md-6">
               <h4>FNC STREAK65 ULTRA COMPACT ESPORTS</h4>                
                   <img id="description" class="img-fluid w-50  " src="assets\img\FNC\FNC Clavier STREAK65 ULTRA COMPACT ESPORTS KEYBOARD.png"
                     alt="">              
@@ -99,7 +110,7 @@
                 Big on performance, small in size. The STREAK65 is built for Esports. The 65% compact form factor has custom low profile Fnatic Speed Switches, with a familiar key press feeling and the award winning STREAK industrial design. Everything you need to perform, nothing more.
               </p>
             </div>
-            <div class="col">
+            <div class="affichage col-md-6">
               <h4>Vitality X Corsair K68 RGB</h4>
 
               <img id="description" class="img-fluid w-50 " src="assets\img\Vitality\Vitality X Corsair Clavier Gaming Mécanique K68 RGB png.png"
@@ -110,18 +121,18 @@
                 The Corsair Gaming K68 RGB mechanical keyboard contains Cherry MX Red switches in its chassis, renowned for their responsiveness and reliability. Several media keys, RGB backlighting as well as a palm rest complete this copy, for a mechanical keyboard that goes to the essentials without forgetting the requirements of gaming!
               </p>
             </div>
-            <div class="col">
-              <h4>Origen X HP Gamer Pavilion</h4>
+            <div class="affichage col-md-6">
+              <h4>Origen X HP Pavilion 800</h4>
 
               <img id="description" class="img-fluid w-50 " src="assets\img\Origen\Origen X HP Clavier Gamer Pavilion 800 png.png"
                 alt="">
-              <p>44.99£</p>
+              <p>79.99£</p>
               <input id="boutonprix" type="button" value="Add to cart">
               <p class="replacement">           
                 Hit every key in near silence with the red-switched mechanical keyboard, optimized for gaming. Experience fast-like-air responsiveness, quieter keys and a variety of premium features including colorful LED backlighting and a removable wrist rest.
               </p>
             </div>
-            <div class="col">
+            <div class="affichage col-md-6">
               <h4>Rogue X HyperX Alloy Origins Core</h4>
 
               <img id="description" class="img-fluid w-50 "
@@ -134,7 +145,7 @@
                 Compact 87-key layout, save desktop space, suitable for professional FPS players.
               </p>
             </div>
-            <div class="col">
+            <div class="affichage col-md-6">
               <h4> Splyce X Razer Blackwidow Elite </h4>
 
               <img id="description" class="img-fluid w-50  "
@@ -145,7 +156,7 @@
                 Razer Mechanical Keys: Designed for gaming, Razer Mechanical Keys feature optimized activation and reset points. Thus, orders are executed super fast. These keys have new facets to improve their stability, as well as their protection against dust and liquids. Choose the type of keys that suits you best among the three different types
               </p>
             </div>
-            <div class="col">
+            <div class="affichage col-md-6">
               <h4>Vitality X Corsair K55 RGB LEB</h4>
 
               <img id="description" class="img-fluid w-50 " src="assets\img\Vitality\Corsair Clavier Gaming K55 RGB rétroéclairage LED RGB.png" alt="">
@@ -174,7 +185,7 @@
     </div>
   </main>
 
-
+  <script src="nouveautéclaviers.js"></script>
 
 
 </body>
